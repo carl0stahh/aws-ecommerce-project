@@ -1,7 +1,7 @@
 <?php
 $host = 'ecommerce-db.cl2wmywakooy.ap-southeast-2.rds.amazonaws.com';
 $user = 'admin';
-$pass = 'Aphalkau444';
+$pass = getenv(DB_PASSWORD');
 $db   = 'ecommerce';
 
 $conn = new mysqli($host, $user, $pass, $db);
