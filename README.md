@@ -49,3 +49,6 @@ User → CloudFront (CDN + HTTPS) → EC2 (Web Server) → RDS (Database)
 
 ## Tech Stack
 PHP · MySQL · Apache · AWS
+
+## Status
+Live and deployed via CI/CD pipeline 🚀
