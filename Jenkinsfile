@@ -9,12 +9,10 @@ pipeline {
     stages {
 
         stage('Checkout') {
-            steps {
-                echo "Cloning repo..."
-                git branch: 'main', url: 'https://github.com/carl0stahh/aws-ecommerce-project.git'
-                sh 'ls -la'
-            }
-        }
+    steps {
+        checkout scm
+    }
+}
 
         stage('Inspect') {
             steps {
